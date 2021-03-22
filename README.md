@@ -13,4 +13,31 @@ Clientul se poate inregistra si conecta in aplicatie,pentru conectare trimitand 
 
 
 
-Persoana ce livreaza comenzi se poate de asemenea inregistra si conecta,reprezentand si aceasta un tip de client in aplicatie.Pentru ambele tipuri de clienti inregistarea se face printr-un username si o parola,username-ul fiind reprezentat de nume si prenume.Totodata dupa conectare acestia isi vor adauga numarul de telefon pentru a putea comunica in caz de nevoie.Toate datele vor fi trimise server-ului ce le va stoca in baza de date si le va trimite cumparatorului si celui ce va face livrarea in momentul preluarii comenzii.Parolele sunt singurele informatii ce nu vor fi transmise,iar acestea vor fi criptate pentru securitatea conturilor utilizatorilor.Pentru a prelua o comanda tipul de utilizator ce are acesta optiune va putea vizualiza o lista primita de la server cu comenzi si va putea sa selecteze o anumita comanda pe care in cazul in care va apasa pe butonul de accept o va avea atribuita lui.Atribuirea se face prin trimiterea unui mesaj de accept pentru o anumita comanda catre server care va scoate din lista de comenzi disponibile comanda respectiva.Dupa livrare acest tip de client va apasa pe butonul de comanda livrata si astfel va putea reveni la lista de comenzi disponibile pentru preluare.La final acesta se poate deconecta la fel ca si cumparatorii.
+Persoana ce livreaza comenzi se poate de asemenea inregistra si conecta,reprezentand si aceasta un tip de client in aplicatie.Pentru ambele tipuri de clienti inregistarea se face printr-un username,o parola,numele,prenumele si e-mailul.Conectarea in aplicatie se face ori cu adresa de email si parola setata,ori cu facebook-ul.Totodata dupa conectare acestia isi vor adauga numarul de telefon pentru a putea comunica in caz de nevoie.Toate datele vor fi trimise server-ului ce le va stoca in baza de date si le va trimite cumparatorului si celui ce va face livrarea in momentul preluarii comenzii.Parolele sunt singurele informatii ce nu vor fi transmise,iar acestea vor fi criptate pentru securitatea conturilor utilizatorilor.Pentru a prelua o comanda tipul de utilizator ce are acesta optiune va putea vizualiza o lista primita de la server cu comenzi si va putea sa selecteze o anumita comanda pe care in cazul in care va apasa pe butonul de accept o va avea atribuita lui.Atribuirea se face prin trimiterea unui mesaj de accept pentru o anumita comanda catre server care va scoate din lista de comenzi disponibile comanda respectiva.Dupa livrare acest tip de client va apasa pe butonul de comanda livrata si astfel va putea reveni la lista de comenzi disponibile pentru preluare.La final acesta se poate deconecta la fel ca si cumparatorii.
+
+
+Tehnologii folosite:pentru baza de date vom folosi SQL,pentru backend,Java,iar pentru frontend,Java si xml 
+
+
+Functionalitati:
+- clientul isi poate creea un cont sau autentifica daca are deja un cont
+- pentru autentificare se introduce adresa de mail si parola sau facebook-ul
+- clientul isi poate adauga un numar de telefon si adresa
+- clientul poate sa vada restaurantele si fara a se conecta 
+- daca acesta doreste sa comande ceva trebuie sa se conecteze
+- clientul poate sa aleaga un restaurant si sa vada detaliile despre acesta
+- poate sa adauge in cos ceea ce doreste sa comande si sa introduca mentiuni
+- apoi poate fi plasata comanda,dar nu inainte de a adauga detaliile despre plata si adresa
+- dupa plasarea comenzii aceasta este introdusa intr-o lista de comenzi disponibile
+- clientul poate oricand sa vizualizeze starea comenzii precum si eventuale mesaje de la livrator 
+- lista de comenzi disponibile apare in contul livratorului
+- livratorul se poate conecta si inregistra in aplicatie
+- pentru inregistrarea livratorului trebuie primit un accept de la admin
+- din lista de comenzi disponibile livratorul alege o comanda pe care o accepta 
+- de la livrator clientul primeste detaliile de livrare
+- acesta poate sa trimita mesaje clientului prin aplicatie
+- dupa livrare va apasa butonul de comanda livrata si se va intoarce la lista de comenzi disponibile de unde va putea selecta o alta comanda
+- atat clientul si livratorul se pot deloga din aplicatie
+- adminul adauga restaurante si accepta livratori
+- adminul realizeaza comunicarea inte client si livrator
+
